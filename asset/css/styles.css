@@ -296,6 +296,81 @@ body {
     }
   }
 }
+@media screen and (max-width:470px){
+  .homeImg {
+
+  .image {
+    width: 200px;
+    height: 200px;
+
+    img {
+      position: relative;
+      width: 200px;
+    }
+  }
+}
+.icon {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  .fa-brands {
+    font-size: 3em;
+    position: absolute;
+  }
+  .fa-html5 {
+    color: rgb(255, 85, 0);
+    top: 10%;
+    left: 20%;
+  }
+
+  .css {
+    color: blue;
+    top: 15% !important;
+    left: 70% !important;
+  }
+  .js {
+    color: yellow;
+    top: 35% !important;
+    left: 90% !important;
+  }
+  .vue {
+    color: green;
+    top: 35% !important;
+    left: -4% !important;
+  }
+  .bootstrap {
+    color: rgb(6, 87, 174);
+    top: 50% !important;
+    left: 20% !important;
+  }
+  .laravel {
+    color: blue;
+    top: 60% !important;
+    left: 70% !important;
+  }
+  .php {
+    color: blue;
+    top: -10% !important;
+    left: 35% !important;
+  }
+}
+.gradientColor{
+  z-index: -1;
+  background: linear-gradient(
+    157.81deg,
+    #def9fa -43.27%,
+    #bef3f5 -21.24%,
+    #572ab1 12.19%,
+    #6d49b6 29.82%,
+    #5121b1 51.94%,
+    #5121b1 90.29%
+  );
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  filter: blur(150px);
+}
+}
 .aboutContent {
   color: var(--color6);
   h2 {
@@ -382,10 +457,57 @@ body {
         right: -10px;
         height: 110%;
       }
+        .card__bg {
+        bottom: -50px;
+        left: -50px;
+        position: absolute;
+        right: -50px;
+        top: -50px;
+        transform-origin: 50% 50%;
+        transform: translateZ(-50px);
+        z-index: 0;
+        background: url("../img/background.jpg") center/cover no-repeat;
+        filter: blur(2px);
+      }
     }
   }
 }
-
+@media screen and (max-width: 420px) {
+  .aboutImg {
+    align-items: center;
+  display: flex;
+  font-family: "Open Sans", sans;
+  justify-content: center;
+  overflow: none;
+  perspective: 1000px;
+  text-align: center;
+  margin: 0 20px;
+    margin: 0px;
+    .cards {
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px 20px rgba(0, 0, 0, 0.17);
+    padding: 20px 25px;
+    perspective: 100px;
+    text-align: left;
+    transform-origin: 50% 50%;
+    transform-style: preserve-3d;
+    transform: rotateX(11deg) rotateY(16.5deg);
+    min-width: 300px;
+      min-width: 200px;
+      .card {
+        height: 100px;
+        width: 100px;
+        text-align: center;
+        .card__img {
+          position: relative;
+          height: 200px;
+          width: 200px;
+          border-radius: 20px;
+        }
+      }
+    }
+  }
+}
 @media screen and (max-width: 800px) {
   .aboutImg {
     margin: 0px;
@@ -435,28 +557,62 @@ body {
     margin: 0px;
     .cards {
       display: inline-block;
-      padding: 20px 20px;
+      padding: 10px 10px;
       text-align: center;
-      perspective: 1800px;
+      perspective: 1000px;
       transform-origin: 50% 50%;
-      transform-style: preserve-3d;
-      width: 300px;
+      width: 100px;
       border-radius: 20px;
-      .card {
-        height: 250px;
-        width: 250px;
-        text-align: center;
-        .card__img {
-          position: relative;
-          height: 300px;
-          width: 300px;
-        }
-        .card__one .card__img {
-          top: 14px;
-          right: -10px;
-          height: 110%;
-        }
+       .card {
+      border-radius: 15px;
+      box-shadow: 5px 5px 20px -5px rgba(0, 0, 0, 0.6);
+      display: inline-block;
+      height: 200px;
+      overflow: hidden;
+      perspective: 1200px;
+      position: relative;
+      transform-style: preserve-3d;
+      transform: translatez(35px);
+      transition: transform 200ms ease-out;
+      width: 200px;
+      text-align: center;
+      .card__img {
+        position: relative;
+        height: 200px;
+        width: 200px;
       }
+
+      .card__bg {
+        bottom: -50px;
+        left: -50px;
+        position: absolute;
+        right: -50px;
+        top: -50px;
+        transform-origin: 50% 50%;
+        transform: translateZ(-50px);
+        z-index: 0;
+        background: url("../img/background.jpg") center/cover no-repeat;
+        filter: blur(2px);
+      }
+
+      .card__one .card__img {
+        top: 14px;
+        right: -10px;
+        height: 110%;
+      }
+        .card__bg {
+        bottom: -50px;
+        left: -50px;
+        position: absolute;
+        right: -50px;
+        top: -50px;
+        transform-origin: 50% 50%;
+        transform: translateZ(-50px);
+        z-index: 0;
+        background: url("../img/background.jpg") center/cover no-repeat;
+        filter: blur(2px);
+      }
+    }
     }
   }
 }
